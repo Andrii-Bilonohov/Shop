@@ -1,0 +1,442 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\presentation\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\profiles\\orderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\profiles\\orderprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\abstractions\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\abstractions\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\abstractions\\repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\abstractions\\repositories\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\data\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\ordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|solutionrelative:domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\domain\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CEDD9C3-33B4-4828-88AE-4E47B583ED34}|Domain\\Domain.csproj|solutionrelative:domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\filters\\orderfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\filters\\orderfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\migrations\\20260101124741_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20260101124741_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\middlewares\\listentoonlygatewayapimiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\middlewares\\listentoonlygatewayapimiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\options\\gatewayoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\options\\gatewayoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F9A5D86-BDDD-4A42-BC0D-54D583F3D995}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A13367F6-CE51-455E-80AB-6B2A36770614}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\dtos\\requests\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\createorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\dtos\\requests\\updateorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\updateorderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\orderservice\\application\\dtos\\responses\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78A085FE-DD35-4F4A-9B37-AF71AD8D2E1B}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\orderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20260101124741_Init.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Migrations\\20260101124741_Init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20260101124741_Init.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Migrations\\20260101124741_Init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20260101124741_Init.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCMAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:48:03.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\Program.cs*",
+              "RelativeToolTip": "Presentation\\Program.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwG4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:27:33.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ListenToOnlyGatewayApiMiddleware.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Middlewares\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Middlewares\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Middlewares\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeToolTip": "Infrastructure\\Middlewares\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:15:52.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GatewayOptions.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Options\\GatewayOptions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Options\\GatewayOptions.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Options\\GatewayOptions.cs",
+              "RelativeToolTip": "Infrastructure\\Options\\GatewayOptions.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:14:05.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:13:05.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeToolTip": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:11:59.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwCoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-01T12:10:29.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-01T12:05:45.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Presentation\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T19:45:11.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAcwGUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T19:21:17.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderProfile.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Profiles\\OrderProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Profiles\\OrderProfile.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Profiles\\OrderProfile.cs",
+              "RelativeToolTip": "Application\\Profiles\\OrderProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:29:25.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderResponse.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Responses\\OrderResponse.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Responses\\OrderResponse.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Responses\\OrderResponse.cs",
+              "RelativeToolTip": "Application\\DTOs\\Responses\\OrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:15:34.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Contracts\\Response.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\Response.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Contracts\\Response.cs",
+              "RelativeToolTip": "Application\\Contracts\\Response.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:14:46.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateOrderStatus.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Requests\\UpdateOrderStatus.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\UpdateOrderStatus.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Requests\\UpdateOrderStatus.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\UpdateOrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:09:30.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateOrder.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Requests\\CreateOrder.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\CreateOrder.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\DTOs\\Requests\\CreateOrder.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\CreateOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:05:20.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IOrderService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Services\\IOrderService.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T18:04:40.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:56:58.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Repositories\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IOrderRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Repositories\\IOrderRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:54:03.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderFilter.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Filters\\OrderFilter.cs",
+              "RelativeDocumentMoniker": "Application\\Filters\\OrderFilter.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Filters\\OrderFilter.cs",
+              "RelativeToolTip": "Application\\Filters\\OrderFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:52:18.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswEYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:48:38.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderConfiguration.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Configurations\\OrderConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\OrderConfiguration.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Configurations\\OrderConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\OrderConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:33:11.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderContext.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Data\\OrderContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\OrderContext.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Infrastructure\\Data\\OrderContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\OrderContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:28:41.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:12:28.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "Domain\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T09:29:01.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Order.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Models\\Order.cs",
+              "RelativeToolTip": "Domain\\Models\\Order.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwF0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T08:57:47.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\OrderService\\Domain\\Models\\BaseModel.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T08:57:23.811Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

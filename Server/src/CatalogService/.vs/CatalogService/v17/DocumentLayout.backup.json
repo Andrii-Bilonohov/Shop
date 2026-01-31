@@ -1,0 +1,536 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\presentation\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\services\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\abstractions\\services\\iitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\abstractions\\repositories\\iitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\repositories\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\domain\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|solutionrelative:domain\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\domain\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\data\\itemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\itemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\configurations\\itemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\itemconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C7EDDE2-4101-4ACE-832E-0B3D193B612C}|Domain\\Domain.csproj|solutionrelative:domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\migrations\\20251229105147_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20251229105147_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\options\\gatewayoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\options\\gatewayoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\profiles\\itemprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\profiles\\itemprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\infrastructure\\migrations\\itemcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674AF8C4-1279-4205-B949-78504F102834}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\itemcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\filters\\itemfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\filters\\itemfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\dtos\\responses\\itemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\itemresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\dtos\\requests\\updateitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\updateitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\dtos\\requests\\createitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\createitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7034D92-D536-4404-BBFB-B5902DE5E52A}|Solution Items{D7034D92-D536-4404-BBFB-B5902DE5E52A}|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D7034D92-D536-4404-BBFB-B5902DE5E52A}|Solution Items{D7034D92-D536-4404-BBFB-B5902DE5E52A}|solutionrelative:compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\presentation\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CFFEB56B-1FAA-4B49-B478-4BF59B064042}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\catalogservice\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8552D3A9-D636-495B-80B9-31F8A035FCBF}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\20251225153148_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251225153148_Init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 142,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 27,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ItemContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\ItemContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\ItemContextModelSnapshot.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\ItemContextModelSnapshot.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\ItemContextModelSnapshot.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:17:24.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20251229105147_Init.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\20251229105147_Init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251229105147_Init.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\20251229105147_Init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20251229105147_Init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T10:51:47.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Enums\\Category.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Category.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Enums\\Category.cs",
+              "RelativeToolTip": "Domain\\Enums\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T09:34:24.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "compose.yaml",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\compose.yaml",
+              "RelativeDocumentMoniker": "compose.yaml",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\compose.yaml",
+              "RelativeToolTip": "compose.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-12-27T16:18:27.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": ".env",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\.env",
+              "RelativeToolTip": ".env",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-27T14:24:50.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Dockerfile",
+              "RelativeDocumentMoniker": "Presentation\\Dockerfile",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Dockerfile",
+              "RelativeToolTip": "Presentation\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-27T11:12:49.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20251225153148_Init.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\20251225153148_Init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251225153148_Init.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Migrations\\20251225153148_Init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20251225153148_Init.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T15:31:49.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-25T15:16:59.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\ItemsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T14:37:05.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Application.csproj",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-25T14:36:21.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ItemProfile.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Profiles\\ItemProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Profiles\\ItemProfile.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Profiles\\ItemProfile.cs",
+              "RelativeToolTip": "Application\\Profiles\\ItemProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:16:21.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ItemResponse.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Responses\\ItemResponse.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Responses\\ItemResponse.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Responses\\ItemResponse.cs",
+              "RelativeToolTip": "Application\\DTOs\\Responses\\ItemResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:07:02.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CreateItem.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Requests\\CreateItem.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\CreateItem.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Requests\\CreateItem.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\CreateItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:06:59.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UpdateItem.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Requests\\UpdateItem.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\UpdateItem.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\DTOs\\Requests\\UpdateItem.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\UpdateItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:06:57.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Contracts\\Response.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\Response.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Contracts\\Response.cs",
+              "RelativeToolTip": "Application\\Contracts\\Response.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:01:08.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IItemService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Services\\IItemService.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IItemService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Services\\IItemService.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IItemService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:59:06.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ItemService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Services\\ItemService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ItemService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Services\\ItemService.cs",
+              "RelativeToolTip": "Application\\Services\\ItemService.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAkwFgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:58:32.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ItemRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Repositories\\ItemRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ItemRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Repositories\\ItemRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T17:03:55.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ItemFilter.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Filters\\ItemFilter.cs",
+              "RelativeDocumentMoniker": "Application\\Filters\\ItemFilter.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Filters\\ItemFilter.cs",
+              "RelativeToolTip": "Application\\Filters\\ItemFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T17:01:44.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ItemConfiguration.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Configurations\\ItemConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\ItemConfiguration.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Configurations\\ItemConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\ItemConfiguration.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:42:30.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemContext.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Data\\ItemContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ItemContext.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Data\\ItemContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ItemContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:41:43.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:37:02.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:30:24.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IItemRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Repositories\\IItemRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IItemRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Repositories\\IItemRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IItemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:29:47.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Models\\BaseModel.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:27:59.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Item.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Domain\\Models\\Item.cs",
+              "RelativeToolTip": "Domain\\Models\\Item.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T16:27:07.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Presentation\\Program.cs*",
+              "RelativeToolTip": "Presentation\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:50:07.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:39:14.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GatewayOptions.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Options\\GatewayOptions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Options\\GatewayOptions.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Options\\GatewayOptions.cs",
+              "RelativeToolTip": "Infrastructure\\Options\\GatewayOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:28:46.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ListenToOnlyGatewayApiMiddleware.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeToolTip": "Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:24:45.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeToolTip": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:55:07.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\CatalogService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T12:51:13.474Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

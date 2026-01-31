@@ -1,0 +1,489 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\presentation\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\authorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|solutionrelative:application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\application\\abstractions\\repositories\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|solutionrelative:application\\abstractions\\repositories\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|solutionrelative:domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|solutionrelative:domain\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\migrations\\20260106121707_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20260106121707_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90BB8F1A-729B-4060-91A3-B2E0C6B76068}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\usercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\logger\\exceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\middlewars\\listentoonlygatewayapimiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\middlewars\\listentoonlygatewayapimiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425AD704-9EA1-4F37-878C-E63305A18065}|Application\\Application.csproj|solutionrelative:application\\abstractions\\logger\\iexceptionlogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{807179CF-4A13-422C-ACDE-0E23780EE08D}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\domain\\enums\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\authorizationservice\\domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAA33358-92DE-49B0-A4D4-E2DEE4066C6E}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\PasswordHasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Services\\PasswordHasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IPasswordHasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Services\\IPasswordHasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IJwtTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Services\\IJwtTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\JwtTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Services\\JwtTokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ResetPassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\DTOs\\Requests\\ResetPassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ForgotPassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\DTOs\\Requests\\ForgotPassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\RegisterLocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\DTOs\\Requests\\RegisterLocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\LoginLocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\DTOs\\Requests\\LoginLocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Services\\IAuthService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Repositories\\BaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 133,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20260106121707_Init.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Migrations\\20260106121707_Init.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20260106121707_Init.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Migrations\\20260106121707_Init.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20260106121707_Init.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:18:01.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:15:41.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Logger\\ExceptionLogger.cs",
+              "RelativeToolTip": "Infrastructure\\Logger\\ExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:47:15.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ListenToOnlyGatewayApiMiddleware.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "RelativeToolTip": "Infrastructure\\Middlewars\\ListenToOnlyGatewayApiMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:46:02.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IExceptionLogger.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Logger\\IExceptionLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:42:17.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\AuthRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Repositories\\AuthRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\AuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:39:06.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorizationController.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\Controllers\\AuthorizationController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\AuthorizationController.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\Controllers\\AuthorizationController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\AuthorizationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:31:24.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\PasswordHasher.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\PasswordHasher.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:14:44.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IPasswordHasher.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IPasswordHasher.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IPasswordHasher.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IPasswordHasher.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IPasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T14:01:50.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IJwtTokenService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IJwtTokenService.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IJwtTokenService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IJwtTokenService.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IJwtTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:57:50.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-04T12:44:02.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:36:38.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Services\\JwtTokenService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "Infrastructure\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:34:47.922Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAuthRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Repositories\\IAuthRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IAuthRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Repositories\\IAuthRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IAuthRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:29:45.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ResetPassword.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ResetPassword.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\ResetPassword.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ResetPassword.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\ResetPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:27:52.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ForgotPassword.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ForgotPassword.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\ForgotPassword.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\ForgotPassword.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\ForgotPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:27:14.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAA7wDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:23:13.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegisterLocal.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\RegisterLocal.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\RegisterLocal.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\RegisterLocal.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\RegisterLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T12:07:24.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginLocal.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\LoginLocal.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\LoginLocal.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\DTOs\\Requests\\LoginLocal.cs",
+              "RelativeToolTip": "Application\\DTOs\\Requests\\LoginLocal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T11:43:37.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Contracts\\Response.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\Response.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Contracts\\Response.cs",
+              "RelativeToolTip": "Application\\Contracts\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T11:40:53.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T11:40:19.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwCwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:49:40.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserContext.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Data\\UserContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\UserContext.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Data\\UserContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\UserContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:42:44.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:40:50.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T13:30:18.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthProvider.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Enums\\AuthProvider.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\AuthProvider.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Enums\\AuthProvider.cs",
+              "RelativeToolTip": "Domain\\Enums\\AuthProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T12:39:49.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\User.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Models\\User.cs",
+              "RelativeToolTip": "Domain\\Models\\User.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T12:34:46.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Enums\\Role.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Role.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Enums\\Role.cs",
+              "RelativeToolTip": "Domain\\Enums\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T12:32:58.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\AuthorizationService\\Domain\\Models\\BaseModel.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T12:32:13.684Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{170FF254-D19E-4E53-AEEE-DCF4D4239663}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170FF254-D19E-4E53-AEEE-DCF4D4239663}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{170FF254-D19E-4E53-AEEE-DCF4D4239663}|Presentation\\Presentation.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\presentation\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{170FF254-D19E-4E53-AEEE-DCF4D4239663}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9880016-AA22-40AF-949C-A3A224F429CE}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\application\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9880016-AA22-40AF-949C-A3A224F429CE}|Application\\Application.csproj|solutionrelative:application\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\infrastructure\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9880016-AA22-40AF-949C-A3A224F429CE}|Application\\Application.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\application\\abstractions\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9880016-AA22-40AF-949C-A3A224F429CE}|Application\\Application.csproj|solutionrelative:application\\abstractions\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\domain\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\infrastructure\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C68F3BDA-2D3F-4607-BA8D-61DABF537687}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\domain\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|c:\\asp.net\\shop\\server\\src\\paymentservice\\domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E84D4FA7-9B4A-4374-9725-892979CF3A8D}|Domain\\Domain.csproj|solutionrelative:domain\\models\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Contracts\\Response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Services\\IPaymentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Services\\IPaymentService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application\\Abstractions\\Repositories\\IBaseRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Contracts\\Response.cs",
+              "RelativeDocumentMoniker": "Application\\Contracts\\Response.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Contracts\\Response.cs",
+              "RelativeToolTip": "Application\\Contracts\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:47:02.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Services\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Services\\IPaymentService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Services\\IPaymentService.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Services\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:40:23.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Presentation\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Presentation\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:35:56.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Services\\PaymentService.cs",
+              "RelativeToolTip": "Application\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:35:20.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IBaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IBaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T13:03:42.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:44:37.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Repositories\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Repositories\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Application\\Abstractions\\Repositories\\IPaymentRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Repositories\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:43:18.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaymentContext.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Data\\PaymentContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\PaymentContext.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Data\\PaymentContext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\PaymentContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:42:21.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Infrastructure\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:40:06.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "Domain\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:23:15.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "Domain\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:40:10.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Models\\BaseModel.cs",
+              "RelativeToolTip": "Domain\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:38:34.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Payment.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Domain\\Models\\Payment.cs",
+              "RelativeToolTip": "Domain\\Models\\Payment.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwGoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:37:58.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Asp.net\\Shop\\Server\\src\\PaymentService\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:37:01.584Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

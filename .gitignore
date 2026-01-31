@@ -1,0 +1,112 @@
+#################################
+# OS / Editor
+#################################
+.DS_Store
+Thumbs.db
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+
+#################################
+# Build results
+#################################
+bin/
+obj/
+out/
+dist/
+build/
+
+
+#################################
+# Logs
+#################################
+*.log
+
+
+#################################
+# ASP.NET / .NET
+#################################
+# User-specific files
+*.rsuser
+*.dbmdl
+*.jfm
+
+# Rider / VS
+_ReSharper*/
+*.DotSettings.user
+
+# ASP.NET Core
+appsettings.Development.json
+appsettings.Local.json
+
+# EF Core
+Migrations/*.Designer.cs
+*.db
+*.db-shm
+*.db-wal
+
+
+#################################
+# Node / React
+#################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# React / Vite / Next / CRA
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Next.js
+.next/
+
+# Vite
+.vite/
+
+# CRA
+.cache/
+
+
+#################################
+# Test / Coverage
+#################################
+coverage/
+*.coverage
+*.coveragexml
+TestResults/
+
+
+#################################
+# Publish / Deploy
+#################################
+publish/
+wwwroot/lib/
+
+
+#################################
+# Docker
+#################################
+docker-compose.override.yml
+
+
+#################################
+# Secrets
+#################################
+*.secrets.json
+secrets.json
+**/appsettings.Development.json
+**/appsettings.Production.json
