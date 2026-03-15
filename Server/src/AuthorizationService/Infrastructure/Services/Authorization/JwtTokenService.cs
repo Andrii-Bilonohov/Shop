@@ -2,22 +2,13 @@
 using System.Security.Claims;
 using System.Text;
 using Application.Abstractions.Services.JWT;
+using Application.Options;
 using Domain.Enums;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Infrastructure.Services.Authorization
 {
-    public class JwtSettings
-    {
-        public string Secret { get; set; } = null!;
-        public int ExpiryMinutes { get; set; } = 60;
-        public string Issuer { get; set; } = null!;
-        public string Audience { get; set; } = null!;
-        
-        public JwtSettings() { }
-    }
-
     public class JwtTokenService : IJwtTokenService
     {
         private readonly JwtSettings _settings;

@@ -25,9 +25,8 @@ public static class DependencyInjection
 
         services.AddDbContext<PaymentContext>(options =>
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-            options.UseSqlServer(connectionString);
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__PaymentDb");
+            options.UseNpgsql(connectionString);
         });
 
         services.AddSingleton<IExceptionLogger, ExceptionLogger>();

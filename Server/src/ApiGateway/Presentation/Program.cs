@@ -1,20 +1,27 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using DotNetEnv;
 using Presentation.Middlewares;
 using Presentation.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Env.Load("C:/Asp.net/Shop/Server/.env");
+builder.Configuration.AddEnvironmentVariables();
+
 builder.Services.AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
-var jwt = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()!;
-                       
-                       builder.Services.AddOptions<GatewayOptions>()
-                           .Bind(builder.Configuration.GetSection(GatewayOptions.SectionName))
-                           .Validate(x => !string.IsNullOrWhiteSpace(x.Secret), "Gateway:Secret is required")
-                           .ValidateOnStart();
+builder.Services.AddOptions<GatewayOptions>()
+    .Bind(builder.Configuration.GetSection(GatewayOptions.SectionName))
+    .Validate(x => !string.IsNullOrWhiteSpace(x.Secret), "Gateway:Secret is required")
+    .ValidateOnStart();
+
+var jwtSecret = Environment.GetEnvironmentVariable("JWT__SECRET") 
+                ?? throw new ArgumentNullException("JWT__SECRET not set");
+var jwtIssuer = Environment.GetEnvironmentVariable("JWT__ISSUER") ?? "Authorization";
+var jwtAudience = Environment.GetEnvironmentVariable("JWT__AUDIENCE") ?? "ApiGateway";
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -27,15 +34,14 @@ builder.Services
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
 
-            ValidIssuer = jwt.Issuer,
-            ValidAudience = jwt.Audience,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Secret)),
+            ValidIssuer = jwtIssuer,
+            ValidAudience = jwtAudience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
 
             ClockSkew = TimeSpan.FromSeconds(30),
 
             NameClaimType = "sub",
             RoleClaimType = "role",
-            
         };
     });
 
@@ -50,7 +56,5 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseAddUserHeaders();
-
 app.MapReverseProxy();
-
 app.Run();

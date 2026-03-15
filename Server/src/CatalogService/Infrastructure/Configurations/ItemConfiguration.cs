@@ -8,6 +8,7 @@ namespace Infrastructure.Configurations
     {
         public void Configure(EntityTypeBuilder<Item> builder)
         {
+            builder.ToTable("Items");
             builder.HasKey(i => i.Id);
 
             builder.Property(i => i.Name)
@@ -31,15 +32,13 @@ namespace Infrastructure.Configurations
             builder.Property(i => i.ImageUrl)
                 .IsRequired();
 
-            builder.Property(i => i.CreatedAt)
-                .IsRequired()
-                .HasDefaultValueSql("GETDATE()");
+            builder.Property(x => x.CreatedAt)
+                .HasDefaultValueSql("NOW()");
+
+            builder.Property(x => x.UpdatedAt)
+                .HasDefaultValueSql("NOW()");
 
             builder.HasQueryFilter(i => !i.IsDeleted);
-
-            builder.Property(i => i.UpdatedAt)
-                .IsRequired()
-                .HasDefaultValueSql("GETDATE()");
             
             builder.HasMany(i => i.Reviews)
                 .WithOne(r => r.Item)

@@ -24,9 +24,8 @@ namespace Infrastructure.DependencyInjection
             
             services.AddDbContext<ItemContext>(options =>
             {
-                var connectionString = configuration.GetConnectionString("DefaultConnection");
-
-                options.UseSqlServer(connectionString);
+                var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__CatalogDb");
+                options.UseNpgsql(connectionString);
             });
 
             services.AddSingleton<IExceptionLogger, ExceptionLogger>();
