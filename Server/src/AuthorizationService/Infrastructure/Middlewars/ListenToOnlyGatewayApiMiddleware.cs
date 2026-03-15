@@ -1,10 +1,10 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
 using Application.Abstractions.Logger;
-using Infrastructure.Options;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
 using System.Text.Json;
+using Application.Options;
 
 namespace Infrastructure.Middlewars;
 
