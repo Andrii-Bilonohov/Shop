@@ -6,6 +6,4 @@ public class JwtSettings
     public int ExpiryMinutes { get; set; } = 60;
     public string Issuer { get; set; } = null!;
     public string Audience { get; set; } = null!;
-        
-    public JwtSettings() { }
 }

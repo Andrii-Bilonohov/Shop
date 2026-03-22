@@ -2,7 +2,7 @@
 using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
 using Application.Abstractions.Services.UnitOfWork;
-using Application.Profiles;
+using Application.Mappers;
 using Application.Services;
 using Infrastructure.Data;
 using Infrastructure.Logger;
@@ -24,7 +24,7 @@ namespace Infrastructure.DependencyInjection
 
             services.AddDbContext<OrderContext>(options =>
             {
-                var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__OrderDb");
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
                 options.UseNpgsql(connectionString);
             });
 
@@ -38,7 +38,7 @@ namespace Infrastructure.DependencyInjection
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IOrderRepository, OrderRepository>();
 
-            services.AddAutoMapper(cfg => { }, typeof(OrderProfile).Assembly);
+            services.AddAutoMapper(cfg => { }, typeof(OrderMapper).Assembly);
 
             return services;
         }

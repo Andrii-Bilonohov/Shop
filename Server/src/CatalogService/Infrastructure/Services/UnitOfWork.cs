@@ -1,5 +1,5 @@
 ﻿using Application.Abstractions.Services;
-using Application.Abstractions.Services.UnitOfWork;
+using Application.Abstractions.UnitOfWork;
 using Infrastructure.Data;
 
 namespace Infrastructure.Services;

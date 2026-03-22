@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions.Repositories;
+using Application.DTOs.Base.Response;
 using Application.Filters;
 using Domain.Models;
 using Infrastructure.Data;
@@ -12,7 +13,7 @@ namespace Infrastructure.Repositories
         public ItemRepository(ItemContext context)
             : base(context){}
 
-        public async Task<(IReadOnlyList<Item> Items, int TotalCount)> GetAllAsync(int limit, int offset, ItemFilter? filter, CancellationToken ct)
+        public async Task<BaseResponse<Item>> GetAllAsync(int limit, int offset, ItemFilter? filter, CancellationToken ct)
         {
             IQueryable<Item> query = _dbSet.AsNoTracking();
 
@@ -26,7 +27,7 @@ namespace Infrastructure.Repositories
                 .Take(limit)
                 .ToListAsync(ct);
 
-            return (items, totalCount);
+            return new BaseResponse<Item>(items, totalCount);
         }
 
         private static IQueryable<Item> ApplyFilter(

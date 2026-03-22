@@ -6,7 +6,6 @@ using Application.Contracts.Auth;
 using Application.DTOs.Requests.Auth;
 using Application.DTOs.Requests.Password;
 using Application.Options;
-using Domain.Enums;
 using Domain.Models;
 
 namespace Application.Services
@@ -17,15 +16,13 @@ namespace Application.Services
         private readonly IJwtTokenService _jwtTokenService;
         private readonly IPasswordHasher _passwordHasher;
         private readonly IUnitOfWork _unitOfWork;
-        private readonly JwtSettings _jwtSettings;
 
-        public AuthService(IAuthRepository repository, IJwtTokenService jwtTokenService, IPasswordHasher passwordHasher, IUnitOfWork unitOfWork, JwtSettings jwtSettings)
+        public AuthService(IAuthRepository repository, IJwtTokenService jwtTokenService, IPasswordHasher passwordHasher, IUnitOfWork unitOfWork)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _jwtTokenService = jwtTokenService ?? throw new ArgumentNullException(nameof(jwtTokenService));
             _passwordHasher = passwordHasher ?? throw new ArgumentNullException(nameof(passwordHasher));
             _unitOfWork = unitOfWork ??  throw new ArgumentNullException(nameof(unitOfWork));
-            _jwtSettings =  jwtSettings ?? throw new ArgumentNullException(nameof(jwtSettings));
         }
 
         public async Task<AuthResponse> AuthGoogleAsync(string idToken, CancellationToken ct)
@@ -43,12 +40,8 @@ namespace Application.Services
             if (!isValid)
                 return new AuthResponse(Error: "Invalid password");
 
-            string? token = null;
-            if (!string.IsNullOrEmpty(_jwtSettings.Secret))
-            {
-                token = _jwtTokenService.GenerateToken(user.Id, user.Email, user.Role);
-            }
-
+            var token = _jwtTokenService.GenerateToken(user.Id, user.Email, user.Role);
+            
             return new AuthResponse(AccessToken: token);
         }
 
@@ -68,12 +61,8 @@ namespace Application.Services
 
             _repository.Add(user);
             await _unitOfWork.SaveChangesAsync(ct);
-
-            string? token = null;
-            if (!string.IsNullOrEmpty(_jwtSettings.Secret))
-            {
-                token = _jwtTokenService.GenerateToken(user.Id, user.Email, user.Role);
-            }
+            
+            var token = _jwtTokenService.GenerateToken(user.Id, user.Email, user.Role);
 
             return new AuthResponse(AccessToken: token);
         }

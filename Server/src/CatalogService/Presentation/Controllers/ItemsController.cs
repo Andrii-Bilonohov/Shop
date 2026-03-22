@@ -7,7 +7,6 @@ using Presentation.Filters;
 
 namespace Presentation.Controllers
 {
-    
     [ApiController]
     [Route("api/items")]
     public class ItemsController : ControllerBase
@@ -56,14 +55,6 @@ namespace Presentation.Controllers
         public async Task<IActionResult> DeleteAsync([FromRoute] Guid id, CancellationToken ct)
         {
             var response = await _itemService.DeleteAsync(id, ct);
-            return response.Success ? Ok(response) : BadRequest(response);
-        }
-
-        [HttpPatch("rate")]
-        [GatewayAuthorize(Roles = new[] { "Buyer" })]
-        public async Task<IActionResult> RateAsync([FromBody] ReviewItemRequest request, CancellationToken ct)
-        {
-            var response = await _itemService.RateAsync(request, ct);
             return response.Success ? Ok(response) : BadRequest(response);
         }
     }

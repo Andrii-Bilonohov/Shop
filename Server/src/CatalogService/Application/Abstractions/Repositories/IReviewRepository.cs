@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions.Repositories.Base;
+using Application.DTOs.Reviews.Requests;
 using Domain.Models;
 
 namespace Application.Abstractions.Repositories;

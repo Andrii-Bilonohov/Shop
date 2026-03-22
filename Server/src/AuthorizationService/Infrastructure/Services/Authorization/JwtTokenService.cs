@@ -20,16 +20,8 @@ namespace Infrastructure.Services.Authorization
 
         public string GenerateToken(Guid userId, string email, Role role)
         {
-            if (string.IsNullOrWhiteSpace(_settings.Secret))
-                throw new InvalidOperationException("Jwt:Secret is empty");
-
-            if (_settings.ExpiryMinutes <= 0)
-                throw new InvalidOperationException("Jwt:ExpiryMinutes must be > 0");
-
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_settings.Secret));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var now = DateTime.UtcNow;
 
             var claims = new List<Claim>
             {
@@ -43,12 +35,11 @@ namespace Infrastructure.Services.Authorization
                 issuer: _settings.Issuer,
                 audience: _settings.Audience,
                 claims: claims,
-                expires: now.AddMinutes(_settings.ExpiryMinutes), 
+                expires: DateTime.UtcNow.AddMinutes(_settings.ExpiryMinutes),
                 signingCredentials: creds
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
-
 }

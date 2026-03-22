@@ -10,6 +10,9 @@ namespace Application.DTOs.Responses
         string Description,
         decimal TotalPrice,
         int TotalItems,
-        OrderStatus Status
+        OrderStatus Status,
+        List<Guid> ItemsId,
+        DateTime CreatedAt,
+        DateTime? UpdatedAt
     );
 }

@@ -1,5 +1,4 @@
 using System.Text.Json.Serialization;
-using DotNetEnv;
 using Infrastructure.Data;
 using Infrastructure.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
@@ -7,14 +6,13 @@ using Newtonsoft.Json.Converters;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Env.Load("C:/Asp.net/Shop/Server/.env");
-builder.Configuration.AddEnvironmentVariables();
 builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
-        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+        options.JsonSerializerOptions.DefaultIgnoreCondition =
+            JsonIgnoreCondition.WhenWritingNull;
     })
     .AddNewtonsoftJson(o =>
     {
@@ -23,8 +21,6 @@ builder.Services.AddControllers()
             AllowIntegerValues = false
         });
     });
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 

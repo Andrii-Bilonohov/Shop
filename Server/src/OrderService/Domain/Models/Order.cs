@@ -13,10 +13,11 @@ public class Order : BaseModel
     public int TotalItems { get; private set; }
 
     public OrderStatus Status { get; private set; } = OrderStatus.Created;
+    public List<Guid> ItemsId { get; private set; } = new List<Guid>();
 
     protected Order() { }
 
-    public Order(Guid userId, string title, string description, decimal totalPrice, int totalItems)
+    public Order(Guid userId, string title, string description, decimal totalPrice, int totalItems, List<Guid> itemsId)
     {
         if (userId == Guid.Empty)
             throw new ArgumentException("UserId cannot be empty");
@@ -29,6 +30,9 @@ public class Order : BaseModel
 
         if (totalItems <= 0)
             throw new ArgumentException("TotalItems must be greater than zero");
+        
+        if (itemsId == null)
+            throw new ArgumentNullException(nameof(itemsId));
 
         UserId = userId;
         Title = title;
@@ -36,6 +40,7 @@ public class Order : BaseModel
         TotalPrice = totalPrice;
         TotalItems = totalItems;
         Status = OrderStatus.Created;
+        ItemsId = itemsId;
 
         Touch();
     }

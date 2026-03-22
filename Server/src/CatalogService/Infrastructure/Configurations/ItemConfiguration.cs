@@ -16,6 +16,7 @@ namespace Infrastructure.Configurations
                 .HasMaxLength(200);
 
             builder.Property(i => i.Description)
+                .IsRequired(false)
                 .HasMaxLength(1000);
 
             builder.Property(i => i.Price)
@@ -30,7 +31,7 @@ namespace Infrastructure.Configurations
                 .IsRequired();
 
             builder.Property(i => i.ImageUrl)
-                .IsRequired();
+                .IsRequired(false);
 
             builder.Property(x => x.CreatedAt)
                 .HasDefaultValueSql("NOW()");

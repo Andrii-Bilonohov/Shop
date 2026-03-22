@@ -11,6 +11,6 @@ public record Information(
     string? Message = null
 )
 {
-    [property: JsonIgnore(Condition = JsonIgnoreCondition.Always)]
+    [JsonIgnore]
     public bool Success => Error is null;
 }

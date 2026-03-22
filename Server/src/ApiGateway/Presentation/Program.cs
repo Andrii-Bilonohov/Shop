@@ -1,14 +1,10 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using DotNetEnv;
 using Presentation.Middlewares;
 using Presentation.Options;
 
 var builder = WebApplication.CreateBuilder(args);
-
-Env.Load("C:/Asp.net/Shop/Server/.env");
-builder.Configuration.AddEnvironmentVariables();
 
 builder.Services.AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
@@ -18,10 +14,8 @@ builder.Services.AddOptions<GatewayOptions>()
     .Validate(x => !string.IsNullOrWhiteSpace(x.Secret), "Gateway:Secret is required")
     .ValidateOnStart();
 
-var jwtSecret = Environment.GetEnvironmentVariable("JWT__SECRET") 
-                ?? throw new ArgumentNullException("JWT__SECRET not set");
-var jwtIssuer = Environment.GetEnvironmentVariable("JWT__ISSUER") ?? "Authorization";
-var jwtAudience = Environment.GetEnvironmentVariable("JWT__AUDIENCE") ?? "ApiGateway";
+var jwtSettings = builder.Configuration.GetSection("Jwt").Get<JwtSettings>()
+                  ?? throw new ArgumentNullException("JWT settings not set");
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -34,9 +28,9 @@ builder.Services
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
 
-            ValidIssuer = jwtIssuer,
-            ValidAudience = jwtAudience,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSecret)),
+            ValidIssuer = jwtSettings.Issuer,
+            ValidAudience = jwtSettings.Audience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret)),
 
             ClockSkew = TimeSpan.FromSeconds(30),
 
@@ -51,10 +45,23 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Authenticated", p => p.RequireAuthenticatedUser());
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy.WithOrigins("http://localhost:5173") 
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials();
+    });
+});
+
 var app = builder.Build();
 
+app.UseCors("AllowSpecificOrigin");
+
 app.UseAuthentication();
-app.UseAuthorization();
 app.UseAddUserHeaders();
+app.UseAuthorization();
 app.MapReverseProxy();
 app.Run();

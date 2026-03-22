@@ -10,7 +10,7 @@ namespace Application.Contracts.Base
         T? Data = default
     )
     {
-        [property: JsonIgnore(Condition = JsonIgnoreCondition.Always)]
+        [JsonIgnore]
         public bool Success => Error is null;
     }
 
@@ -30,7 +30,7 @@ namespace Application.Contracts.Base
     IEnumerable<T>? Data = null
     )
     {
-        [property: JsonIgnore(Condition = JsonIgnoreCondition.Always)]
+        [JsonIgnore]
         public bool Success => Error is null;
     }
 }

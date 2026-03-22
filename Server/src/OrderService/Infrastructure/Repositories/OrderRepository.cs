@@ -1,4 +1,5 @@
 ﻿using Application.Abstractions.Repositories;
+using Application.DTOs.Base;
 using Application.Filters;
 using Domain.Models;
 using Infrastructure.Data;
@@ -12,7 +13,7 @@ namespace Infrastructure.Repositories
         public OrderRepository(OrderContext context)
             : base(context) { }
 
-        public async Task<(IReadOnlyList<Order> Orders, int TotalCount)> GetAllAsync(
+        public async Task<BaseResponse<Order>> GetAllAsync(
              int limit,
              int offset,
              OrderFilter? filter,
@@ -30,7 +31,7 @@ namespace Infrastructure.Repositories
                 .Take(limit)
                 .ToListAsync(ct);
 
-            return (orders, totalCount);
+            return new  BaseResponse<Order>(orders, totalCount);
         }
 
         private static IQueryable<Order> ApplyFilter(
