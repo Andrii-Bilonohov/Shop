@@ -5,11 +5,11 @@ namespace Application.DTOs.Items.Requests
     public record CreateItem
     (
         string Name,
-        string Description,
+        string? Description,
         Category Category,
         decimal Price,
         int Stock,
         double Weight,
-        string ImageUrl
+        string? ImageUrl
      );
 }

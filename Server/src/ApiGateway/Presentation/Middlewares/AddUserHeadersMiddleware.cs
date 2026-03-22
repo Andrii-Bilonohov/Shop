@@ -21,6 +21,12 @@ public class AddUserHeadersMiddleware
         
         if (context.User.Identity?.IsAuthenticated == true)
         {
+            var token = context.Request.Headers["Authorization"].ToString();
+            if (!string.IsNullOrEmpty(token))
+            {
+                context.Request.Headers["Authorization"] = token;
+            }
+
             var userId = context.User.FindFirst("sub")?.Value;
             if (!string.IsNullOrEmpty(userId))
                 context.Request.Headers["X-UserId"] = userId;

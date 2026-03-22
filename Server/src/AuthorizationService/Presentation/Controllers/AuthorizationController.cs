@@ -1,5 +1,6 @@
 ﻿using Application.Abstractions.Services.Authorization;
 using Application.DTOs.Requests.Auth;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.Controllers
@@ -14,15 +15,14 @@ namespace Presentation.Controllers
         {
             _authService = authService ?? throw new ArgumentNullException(nameof(authService));
         }
-
-
+        
         [HttpPost("login")]
         public async Task<IActionResult> AuthLocalAsync([FromBody] LoginLocal login, CancellationToken ct)
         {
             var response = await _authService.AuthLocalAsync(login, ct);
             return response.Success ? Ok(response) : BadRequest(response);
         }
-
+        
         [HttpPost("register")]
         public async Task<IActionResult> RegisterLocalAsync([FromBody] RegisterLocal register, CancellationToken ct)
         {

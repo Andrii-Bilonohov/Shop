@@ -2,15 +2,12 @@
 using Application.Abstractions.Logger;
 using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Abstractions.Services.UnitOfWork;
+using Application.Abstractions.UnitOfWork;
 using Application.Filters; 
 using Application.Contracts.Base;
 using Application.DTOs.Items.Requests;
 using Application.DTOs.Items.Responses;
-using Application.DTOs.Reviews.Requests;
-using Application.DTOs.Reviews.Responses;
-using AutoMapper;
-using Domain.Models;
+using Application.Mappers;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace Application.Services
@@ -36,18 +33,14 @@ namespace Application.Services
         };
 
         private readonly IItemRepository _itemRepository;
-        private readonly IReviewRepository _reviewRepository;
-        private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMemoryCache _cache;
         private readonly IExceptionLogger _logger;
 
-        public ItemService(IItemRepository itemRepository, IReviewRepository reviewRepository, IMapper mapper,
+        public ItemService(IItemRepository itemRepository,
             IUnitOfWork unitOfWork, IMemoryCache cache, IExceptionLogger logger)
         {
             _itemRepository = itemRepository ?? throw new ArgumentNullException(nameof(itemRepository));
-            _reviewRepository = reviewRepository ?? throw new ArgumentNullException(nameof(reviewRepository));
-            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _unitOfWork = unitOfWork ?? throw new ArgumentNullException(nameof(unitOfWork));
             _cache = cache ?? throw new ArgumentNullException(nameof(cache));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
@@ -64,11 +57,10 @@ namespace Application.Services
                 if (existing is not null)
                     return new Information(Error: "Item with the same name already exists");
 
-                var item = _mapper.Map<Item>(request);
+                var item = request.ToItem();
                 _itemRepository.Add(item);
                 await _unitOfWork.SaveChangesAsync(ct);
 
-                // invalidate
                 _cache.Remove(ItemKey(item.Id));
                 BumpListVersion();
 
@@ -77,6 +69,14 @@ namespace Application.Services
             catch (OperationCanceledException)
             {
                 return new Information(Error: "Request canceled");
+            }
+            catch (ArgumentNullException ex)
+            {
+                return new Information(Error: ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return new Information(Error: ex.Message);
             }
             catch (Exception ex)
             {
@@ -125,6 +125,14 @@ namespace Application.Services
             {
                 return new Information(Error: "Request canceled");
             }
+            catch (ArgumentNullException ex)
+            {
+                return new Information(Error: ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return new Information(Error: ex.Message);
+            }
             catch (Exception ex)
             {
                 _logger.Log(ex, "Update item failed. Id={Id}", id);
@@ -156,6 +164,14 @@ namespace Application.Services
             {
                 return new Information(Error: "Request canceled");
             }
+            catch (ArgumentNullException ex)
+            {
+                return new Information(Error: ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return new Information(Error: ex.Message);
+            }
             catch (Exception ex)
             {
                 _logger.Log(ex, "Delete item failed. Id={Id}", id);
@@ -176,15 +192,15 @@ namespace Application.Services
                 if (_cache.TryGetValue(key, out ResponseList<ItemResponse>? cached) && cached is not null)
                     return cached;
 
-                var (items, totalCount) = await _itemRepository.GetAllAsync(limit, offset, filter, ct);
-                var data = _mapper.Map<IReadOnlyList<ItemResponse>>(items);
+                var items = await _itemRepository.GetAllAsync(limit, offset, filter, ct);
+                var data = items.Items.ToResponse();
 
-                var totalPages = totalCount == 0 ? 0 : (int)Math.Ceiling(totalCount / (double)limit);
+                var totalPages = items.TotalCount == 0 ? 0 : (int)Math.Ceiling(items.TotalCount / (double)limit);
 
                 var result = new ResponseList<ItemResponse>(
                     Limit: limit,
                     Offset: offset,
-                    Items: totalCount,
+                    Items: items.TotalCount,
                     Pages: totalPages,
                     Data: data
                 );
@@ -195,6 +211,14 @@ namespace Application.Services
             catch (OperationCanceledException)
             {
                 return new ResponseList<ItemResponse>(Error: "Request canceled");
+            }
+            catch (ArgumentNullException ex)
+            {
+                return new ResponseList<ItemResponse>(Error: ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return new ResponseList<ItemResponse>(Error: ex.Message);
             }
             catch (Exception ex)
             {
@@ -219,7 +243,7 @@ namespace Application.Services
                 if (item is null)
                     return new Response<ItemResponse>(Error: $"Item with id {id} not found");
 
-                var dto = _mapper.Map<ItemResponse>(item);
+                var dto = item.ToResponse();
 
                 _cache.Set(key, dto, ItemCacheOptions);
                 return new Response<ItemResponse>(Data: dto);
@@ -228,6 +252,14 @@ namespace Application.Services
             {
                 return new Response<ItemResponse>(Error: "Request canceled");
             }
+            catch (ArgumentNullException ex)
+            {
+                return new Response<ItemResponse>(Error: ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                return new Response<ItemResponse>(Error: ex.Message);
+            }
             catch (Exception ex)
             {
                 _logger.Log(ex, "Get item by id failed. Id={Id}", id);
@@ -235,61 +267,61 @@ namespace Application.Services
             }
         }
 
-        public async Task<Response<ReviewResponse>> RateAsync(ReviewItemRequest request, CancellationToken ct)
-        {
-            try
-            {
-                if (request is null)
-                    return new Response<ReviewResponse>(Error: "Request is null");
-
-                if (request.ItemId == Guid.Empty)
-                    return new Response<ReviewResponse>(Error: "ItemId is required");
-
-                if (request.UserId == Guid.Empty)
-                    return new Response<ReviewResponse>(Error: "UserId is required");
-
-                var item = await _itemRepository.GetByIdAsync(request.ItemId, ct);
-                if (item is null)
-                    return new Response<ReviewResponse>(Error: $"Item with id {request.ItemId} not found");
-
-                var review = await _reviewRepository.GetByItemAndUserAsync(request.ItemId, request.UserId, ct);
-
-                if (review is null)
-                {
-                    review = new Review(
-                        request.UserId,
-                        request.ItemId,
-                        request.Rating,
-                        request.Description,
-                        request.ImageUrl
-                    );
-
-                    _reviewRepository.Add(review);
-                }
-                else
-                {
-                    review.Update(request.Rating, request.Description, request.ImageUrl);
-                    _reviewRepository.Update(review);
-                }
-
-                await _unitOfWork.SaveChangesAsync(ct);
-
-                _cache.Remove(ItemKey(request.ItemId));
-                BumpListVersion();
-                
-                var dto = _mapper.Map<ReviewResponse>(review);
-                return new Response<ReviewResponse>(Data: dto);
-            }
-            catch (OperationCanceledException)
-            {
-                return new Response<ReviewResponse>(Error: "Request canceled");
-            }
-            catch (Exception ex)
-            {
-                _logger.Log(ex, "Rate item failed. ItemId={ItemId} UserId={UserId}", request?.ItemId, request?.UserId);
-                return new Response<ReviewResponse>(Error: "Unexpected error: " + ex.Message);
-            }
-        }
+        // public async Task<Response<ReviewResponse>> RateAsync(ReviewItemRequest request, CancellationToken ct)
+        // {
+        //     try
+        //     {
+        //         if (request is null)
+        //             return new Response<ReviewResponse>(Error: "Request is null");
+        //
+        //         if (request.ItemId == Guid.Empty)
+        //             return new Response<ReviewResponse>(Error: "ItemId is required");
+        //
+        //         if (request.UserId == Guid.Empty)
+        //             return new Response<ReviewResponse>(Error: "UserId is required");
+        //
+        //         var item = await _itemRepository.GetByIdAsync(request.ItemId, ct);
+        //         if (item is null)
+        //             return new Response<ReviewResponse>(Error: $"Item with id {request.ItemId} not found");
+        //
+        //         var review = await _reviewRepository.GetByItemAndUserAsync(request.ItemId, request.UserId, ct);
+        //
+        //         if (review is null)
+        //         {
+        //             review = new Review(
+        //                 request.UserId,
+        //                 request.ItemId,
+        //                 request.Rating,
+        //                 request.Description,
+        //                 request.ImageUrl
+        //             );
+        //
+        //             _reviewRepository.Add(review);
+        //         }
+        //         else
+        //         {
+        //             review.Update(request.Rating, request.Description, request.ImageUrl);
+        //             _reviewRepository.Update(review);
+        //         }
+        //
+        //         await _unitOfWork.SaveChangesAsync(ct);
+        //
+        //         _cache.Remove(ItemKey(request.ItemId));
+        //         BumpListVersion();
+        //         
+        //         var dto = _mapper.Map<ReviewResponse>(review);
+        //         return new Response<ReviewResponse>(Data: dto);
+        //     }
+        //     catch (OperationCanceledException)
+        //     {
+        //         return new Response<ReviewResponse>(Error: "Request canceled");
+        //     }
+        //     catch (Exception ex)
+        //     {
+        //         _logger.Log(ex, "Rate item failed. ItemId={ItemId} UserId={UserId}", request?.ItemId, request?.UserId);
+        //         return new Response<ReviewResponse>(Error: "Unexpected error: " + ex.Message);
+        //     }
+        // }
         
 
         private string ListKey(int limit, int offset, ItemFilter? filter)

@@ -6,6 +6,7 @@
         string Title,
         string Description,
         decimal TotalPrice,
-        int TotalItems
+        int TotalItems,
+        List<Guid> ItemsId
     );
 }

@@ -2,9 +2,6 @@
 using Application.Contracts.Base;
 using Application.DTOs.Items.Requests;
 using Application.DTOs.Items.Responses;
-using Application.DTOs.Reviews.Requests;
-using Application.DTOs.Reviews.Responses;
-
 namespace Application.Abstractions.Services
 {
     public interface IItemService
@@ -14,7 +11,5 @@ namespace Application.Abstractions.Services
         Task<Information> CreateAsync(CreateItem item, CancellationToken ct);
         Task<Information> UpdateAsync(Guid id, UpdateItem item, CancellationToken ct);
         Task<Information> DeleteAsync(Guid id, CancellationToken ct);
-        
-        Task<Response<ReviewResponse>> RateAsync(ReviewItemRequest request, CancellationToken ct);
     }
 }

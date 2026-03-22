@@ -1,5 +1,6 @@
 ﻿using System.Linq.Expressions;
 using Application.Abstractions.Repositories.Base;
+using Application.DTOs.Base;
 using Domain.Models;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -58,8 +59,7 @@ namespace Infrastructure.Repositories.Base
                 .FirstOrDefaultAsync(predicate, ct);
         }
 
-        public async Task<(IReadOnlyList<T> Entities, int TotalCount)>
-            GetAllAsync(int limit, int offset, CancellationToken ct)
+        public async Task<BaseResponse<T>> GetAllAsync(int limit, int offset, CancellationToken ct)
         {
             var query = _dbSet.AsNoTracking();
 
@@ -70,7 +70,7 @@ namespace Infrastructure.Repositories.Base
                 .Take(limit)
                 .ToListAsync(ct);
 
-            return (items, totalCount);
+            return new BaseResponse<T>(items, totalCount);
         }
     }
 }

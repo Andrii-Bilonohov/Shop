@@ -1,0 +1,22 @@
+@import './tailwind.css';
+@import './theme.css';
+
+@keyframes gradient-x {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 10s ease infinite;
+}
+
+@keyframes text-gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.animate-text-gradient {
+    background-size: 200% 200%;
+    animation: text-gradient 6s ease infinite;
+}

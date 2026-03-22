@@ -1,10 +1,15 @@
 ﻿using Application.Abstractions.Logger;
 using Application.Abstractions.Repositories;
-using Application.Services;
+using Application.Abstractions.Services.Authorization;
+using Application.Abstractions.Services.JWT;
+using Application.Abstractions.Services.UnitOfWork;
+using Application.Options;
 using Infrastructure.Data;
 using Infrastructure.Logger;
 using Infrastructure.Middlewars;
 using Infrastructure.Repositories;
+using Infrastructure.Services.Authorization;
+using Infrastructure.Services.UnitOfWork;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
@@ -12,12 +17,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Application.Abstractions.Services.Authorization;
-using Application.Abstractions.Services.JWT;
-using Application.Abstractions.Services.UnitOfWork;
-using Application.Options;
-using Infrastructure.Services.Authorization;
-using Infrastructure.Services.UnitOfWork;
+using Application.Services;
 
 namespace Infrastructure.DependencyInjection
 {
@@ -27,17 +27,14 @@ namespace Infrastructure.DependencyInjection
         {
             services.AddDbContext<UserContext>(options =>
             {
-                var connectionString =
-                    Environment.GetEnvironmentVariable("ConnectionStrings__UserDb")
-                    ?? configuration.GetConnectionString("UserDb");
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
                 options.UseNpgsql(connectionString);
             });
             
-            var jwtSettings = configuration.GetSection("JWT").Get<JwtSettings>()
-                              ?? throw new ArgumentNullException("JWT settings not set");;
+            services.Configure<JwtSettings>(configuration.GetSection("Jwt"));
 
-            services.AddSingleton(jwtSettings);
-            services.AddSingleton<IJwtTokenService, JwtTokenService>();
+            var jwt = configuration.GetSection("Jwt").Get<JwtSettings>()
+                      ?? throw new Exception("Jwt settings not configured");
             
             services.AddAuthentication(options =>
             {
@@ -52,21 +49,25 @@ namespace Infrastructure.DependencyInjection
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = jwtSettings.Issuer,
-                    ValidAudience = jwtSettings.Audience,
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Secret))
+
+                    ValidIssuer = jwt.Issuer,
+                    ValidAudience = jwt.Audience,
+
+                    IssuerSigningKey = new SymmetricSecurityKey(
+                        Encoding.UTF8.GetBytes(jwt.Secret))
                 };
             });
             
-            services.AddSingleton<IExceptionLogger, ExceptionLogger>();
-            
-            services.Configure<GatewayOptions>(configuration.GetSection(GatewayOptions.SectionName));
-            
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            
+            services.AddScoped<IJwtTokenService, JwtTokenService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IPasswordHasher, PasswordHasher>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
+            services.AddSingleton<IExceptionLogger, ExceptionLogger>();
+            
+            services.Configure<GatewayOptions>(
+                configuration.GetSection(GatewayOptions.SectionName));
 
             return services;
         }

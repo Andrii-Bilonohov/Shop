@@ -6,23 +6,21 @@ namespace Domain.Models
     public class Item : BaseModel
     {
         public string Name { get; private set; }
-        public string Description { get; private set; }
+        public string? Description { get; private set; }
         public Category Category { get; private set; }
         public decimal Price { get; private set; }
         public int Stock { get; private set; }
         public double Weight { get; private set; }
-        public string ImageUrl { get; private set; }
+        public string? ImageUrl { get; private set; }
         
         public ICollection<Review> Reviews { get; private set; } =  new List<Review>();
-
-        protected Item() { }
-
-        public Item(string name, string description, Category category, decimal price, int stock, double weight, string imageUrl)
+        
+        public Item(string name, string description, Category category, decimal price, int stock, double weight, string? imageUrl)
         {
             UpdateDetails(name, description, category, price, stock, weight, imageUrl);
         }
         
-        public void UpdateDetails(string name, string description, Category category, decimal price, int stock, double weight, string imageUrl)
+        public void UpdateDetails(string name, string description, Category category, decimal price, int stock, double weight, string? imageUrl)
         {
             if (string.IsNullOrWhiteSpace(name))
                 throw new ArgumentNullException(nameof(name));
@@ -42,16 +40,13 @@ namespace Domain.Models
             if (weight < 0)
                 throw new ArgumentException(nameof(weight), "Weight cannot be negative");
 
-            if (string.IsNullOrWhiteSpace(imageUrl))
-                throw new ArgumentNullException(nameof(imageUrl));
-
             Name = name;
             Description = description;
             Category = category;
             Price = price;
             Stock = stock;
             Weight = weight;
-            ImageUrl = imageUrl;
+            ImageUrl = string.IsNullOrWhiteSpace(imageUrl) ? null : imageUrl.Trim();
 
             Touch();
         }

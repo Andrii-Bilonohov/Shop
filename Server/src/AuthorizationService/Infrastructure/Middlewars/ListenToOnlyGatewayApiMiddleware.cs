@@ -36,6 +36,10 @@ public sealed class ListenToOnlyGatewayApiMiddleware
         }
         
         var incoming = headerValue.ToString();
+        
+        Console.WriteLine("Incoming header: " + incoming);
+        Console.WriteLine("Expected secret: " + _options.Secret);
+        
         if (string.IsNullOrWhiteSpace(incoming) || !SecretsEqual(incoming, _options.Secret))
         {
             await DenyAccess(context, $"Invalid gateway secret header '{_options.HeaderName}'.");

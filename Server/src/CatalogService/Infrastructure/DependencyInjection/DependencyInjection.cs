@@ -1,8 +1,7 @@
 ﻿using Application.Abstractions.Logger;
 using Application.Abstractions.Repositories;
 using Application.Abstractions.Services;
-using Application.Abstractions.Services.UnitOfWork;
-using Application.Profiles;
+using Application.Abstractions.UnitOfWork;
 using Application.Services;
 using Infrastructure.Data;
 using Infrastructure.Logger;
@@ -24,7 +23,7 @@ namespace Infrastructure.DependencyInjection
             
             services.AddDbContext<ItemContext>(options =>
             {
-                var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__CatalogDb");
+                var connectionString = configuration.GetConnectionString("DefaultConnection");
                 options.UseNpgsql(connectionString);
             });
 
@@ -41,11 +40,10 @@ namespace Infrastructure.DependencyInjection
             services.AddMemoryCache();
             
             services.AddScoped<IItemService, ItemService>();
-            services.AddScoped<IReviewRepository, ReviewRepository>();
+            services.AddScoped<IReviewService, ReviewService>();
             
+            services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IItemRepository, ItemRepository>();
-
-            services.AddAutoMapper(cfg => { }, typeof(ItemProfile).Assembly);
             
             return services;
         }
