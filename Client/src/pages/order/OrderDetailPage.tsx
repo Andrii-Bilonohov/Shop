@@ -200,6 +200,7 @@ export const OrderDetailPage = () => {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                                 className="w-full mt-4 h-14 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-400 text-black font-bold text-base flex items-center justify-center gap-3 cursor-pointer shadow-lg shadow-green-900/30 hover:shadow-green-900/50 transition-shadow"
+                                onClick={() => navigate(`/payment/${order.id}`)}
                             >
                                 <CreditCard className="h-5 w-5" />
                                 Pay ${order.totalPrice.toLocaleString()}

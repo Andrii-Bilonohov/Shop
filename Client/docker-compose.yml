@@ -1,0 +1,15 @@
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    restart: unless-stopped
+    networks:
+      - backend
+
+networks:
+  backend:
+    external: true
+    name: docker_default
