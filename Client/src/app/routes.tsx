@@ -8,6 +8,7 @@ import { CartPage } from '@/pages/cart/CartPage';
 import { OrdersPage } from '@/pages/orders/OrdersPage';
 import { OrderDetailPage } from '@/pages/order/OrderDetailPage';
 import {HomeRedirect} from "@/app/providers/HomeRedirect.tsx";
+import {PaymentPage} from "@/pages/payment/PaymentPage.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
       },
     ],
   },
+    {
+        path: '/payment/:orderId',
+        element: <PaymentPage />
+    },
   {
     path: '*',
     element: <Navigate to="/" />,

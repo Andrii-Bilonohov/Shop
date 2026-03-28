@@ -32,7 +32,7 @@ export const CartPage = () => {
             description: `${items.length} item(s)`,
             totalPrice: getTotalAmount,
             totalItems: items.reduce((sum, i) => sum + i.quantity, 0),
-            ItemsId: items.map((i) => i.product.id),
+            itemsId: items.map((i) => i.product.id),
         };
         createOrder(orderData, {
             onSuccess: () => { clearCart(); navigate('/orders'); },

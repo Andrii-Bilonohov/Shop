@@ -11,22 +11,28 @@ export const apiClient = axios.create({
 });
 
 apiClient.interceptors.request.use(
-  (config: InternalAxiosRequestConfig) => {
-    const token = localStorage.getItem('accessToken');
-    
-    if (token && config.headers) {
-      config.headers.Authorization = `Bearer ${token}`;
+    (config: InternalAxiosRequestConfig) => {
+        let token = localStorage.getItem('accessToken');
+
+        if (!token) {
+            try {
+                const authStorage = localStorage.getItem('auth-storage');
+                if (authStorage) {
+                    token = JSON.parse(authStorage)?.state?.accessToken;
+                }
+            } catch {
+                console.log('error');
+            }
+        }
+
+        if (token && config.headers) {
+            config.headers.Authorization = `Bearer ${token}`;
+        }
+        if (config.headers) {
+            config.headers['X-Api-Gateway'] = ENV.API_GATEWAY_KEY;
+        }
+        return config;
     }
-
-      if (config.headers) {
-          config.headers['X-Api-Gateway'] = ENV.API_GATEWAY_KEY;
-      }
-
-    return config;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
 );
 
 apiClient.interceptors.response.use(
@@ -34,7 +40,7 @@ apiClient.interceptors.response.use(
     (error: AxiosError) => {
         if (error.response?.status === 401) {
             localStorage.removeItem('accessToken');
-            window.location.href = '/login';
         }
         return Promise.reject(error);
-    })
+    }
+);

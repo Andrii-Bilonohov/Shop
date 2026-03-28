@@ -22,9 +22,10 @@ const FEATURES = [
 const stagger = {
     visible: { transition: { staggerChildren: 0.1 } },
 };
+
 const fadeUp = {
     hidden: { opacity: 0, y: 32 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 export const GuestHomePage = () => {
@@ -152,7 +153,6 @@ export const GuestHomePage = () => {
                 </motion.div>
             </section>
 
-            {/* ─── PRODUCTS ─── */}
             <section id="products" className="py-24 px-6">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
